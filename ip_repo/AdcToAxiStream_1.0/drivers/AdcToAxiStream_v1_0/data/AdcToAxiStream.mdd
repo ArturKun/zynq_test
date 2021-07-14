@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER AdcToAxiStream
+	OPTION supported_peripherals = (AdcToAxiStream);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = AdcToAxiStream;
+END DRIVER

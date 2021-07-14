@@ -1,0 +1,1459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>user</spirit:library>
+  <spirit:name>AdcToAxiStream</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>S00_AXI</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm_rtl" spirit:version="1.0"/>
+      <spirit:slave>
+        <spirit:memoryMapRef spirit:memoryMapRef="S00_AXI"/>
+      </spirit:slave>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awaddr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWPROT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awprot</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WSTRB</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wstrb</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BRESP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_bresp</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_bvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_bready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_araddr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARPROT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_arprot</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_arvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_arready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RRESP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rresp</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>WIZ_DATA_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S00_AXI.WIZ_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197">32</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>WIZ_NUM_REG</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S00_AXI.WIZ_NUM_REG" spirit:minimum="4" spirit:maximum="512" spirit:rangeType="long">4</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>SUPPORTS_NARROW_BURST</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S00_AXI.SUPPORTS_NARROW_BURST" spirit:choiceRef="choice_pairs_ce1226b1">0</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>M00_AXIS</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_tdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TSTRB</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_tstrb</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TLAST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_tlast</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_tvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_tready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>WIZ_DATA_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.WIZ_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197">32</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>M00_AXIS_RST</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_aresetn</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M00_AXIS_RST.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>M00_AXIS_CLK</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_aclk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M00_AXIS_CLK.ASSOCIATED_BUSIF">M00_AXIS</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M00_AXIS_CLK.ASSOCIATED_RESET">m00_axis_aresetn</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S00_AXI_RST</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_aresetn</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_RST.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S00_AXI_CLK</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_aclk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.ASSOCIATED_BUSIF">S00_AXI</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.ASSOCIATED_RESET">s00_axi_aresetn</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:memoryMaps>
+    <spirit:memoryMap>
+      <spirit:name>S00_AXI</spirit:name>
+      <spirit:addressBlock>
+        <spirit:name>S00_AXI_reg</spirit:name>
+        <spirit:baseAddress spirit:format="long" spirit:resolve="user">0</spirit:baseAddress>
+        <spirit:range spirit:format="long">4096</spirit:range>
+        <spirit:width spirit:format="long">32</spirit:width>
+        <spirit:usage>register</spirit:usage>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>OFFSET_BASE_PARAM</spirit:name>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.S00_AXI.S00_AXI_REG.OFFSET_BASE_PARAM">C_S00_AXI_BASEADDR</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>OFFSET_HIGH_PARAM</spirit:name>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.S00_AXI.S00_AXI_REG.OFFSET_HIGH_PARAM">C_S00_AXI_HIGHADDR</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:addressBlock>
+    </spirit:memoryMap>
+  </spirit:memoryMaps>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsynthesis</spirit:name>
+        <spirit:displayName>Verilog Synthesis</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>AdcToAxiStream_v1_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>3ef483bc</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogbehavioralsimulation</spirit:name>
+        <spirit:displayName>Verilog Simulation</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>AdcToAxiStream_v1_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogbehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>3ef483bc</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_softwaredriver</spirit:name>
+        <spirit:displayName>Software Driver</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:sw.driver</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_softwaredriver_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>3a217112</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>70f70e20</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>bd_tcl</spirit:name>
+        <spirit:displayName>Block Diagram</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:block.diagram</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>bd_tcl_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>16328387</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>m00_axis_tdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXIS_TDATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_tstrb</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXIS_TDATA_WIDTH&apos;)) / 8) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_tlast</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_tvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_tready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_aclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_aresetn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awaddr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH&apos;)) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awprot</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wstrb</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) / 8) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_bresp</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_bvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_bready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_araddr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH&apos;)) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_arprot</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_arvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_arready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rresp</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_aclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_aresetn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>AdcData16_i</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">15</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>FifoEmpty_i</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>C_M00_AXIS_TDATA_WIDTH</spirit:name>
+        <spirit:displayName>C M00 AXIS TDATA WIDTH</spirit:displayName>
+        <spirit:description>Width of S_AXIS address bus. The slave accepts the read and write addresses of width C_M_AXIS_TDATA_WIDTH.</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_AXIS_TDATA_WIDTH" spirit:order="3" spirit:rangeType="long">32</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_S00_AXI_DATA_WIDTH</spirit:name>
+        <spirit:displayName>C S00 AXI DATA WIDTH</spirit:displayName>
+        <spirit:description>Width of S_AXI data bus</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH" spirit:order="5" spirit:rangeType="long">32</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_S00_AXI_ADDR_WIDTH</spirit:name>
+        <spirit:displayName>C S00 AXI ADDR WIDTH</spirit:displayName>
+        <spirit:description>Width of S_AXI address bus</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH" spirit:order="6" spirit:rangeType="long">4</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>DEPTH_OF_RECEIVER_DATA_FIFO</spirit:name>
+        <spirit:displayName>Depth Of Receiver Data Fifo</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.DEPTH_OF_RECEIVER_DATA_FIFO">2048</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_list_6fc15197</spirit:name>
+      <spirit:enumeration>32</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
+      <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
+      <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_ce1226b1</spirit:name>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>hdl/AdcToAxiStream_v1_0_M00_AXIS.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/AdcToAxiStream_v1_0_S00_AXI.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/AdcToAxiStream_v1_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_09360599</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>hdl/AdcToAxiStream_v1_0_M00_AXIS.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/AdcToAxiStream_v1_0_S00_AXI.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/AdcToAxiStream_v1_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_softwaredriver_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>drivers/AdcToAxiStream_v1_0/data/AdcToAxiStream.mdd</spirit:name>
+        <spirit:userFileType>mdd</spirit:userFileType>
+        <spirit:userFileType>driver_mdd</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/AdcToAxiStream_v1_0/data/AdcToAxiStream.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>driver_tcl</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/AdcToAxiStream_v1_0/src/Makefile</spirit:name>
+        <spirit:userFileType>driver_src</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/AdcToAxiStream_v1_0/src/AdcToAxiStream.h</spirit:name>
+        <spirit:fileType>cSource</spirit:fileType>
+        <spirit:userFileType>driver_src</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/AdcToAxiStream_v1_0/src/AdcToAxiStream.c</spirit:name>
+        <spirit:fileType>cSource</spirit:fileType>
+        <spirit:userFileType>driver_src</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/AdcToAxiStream_v1_0/src/AdcToAxiStream_selftest.c</spirit:name>
+        <spirit:fileType>cSource</spirit:fileType>
+        <spirit:userFileType>driver_src</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/AdcToAxiStream_v1_0.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_70f70e20</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>bd_tcl_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>bd/bd.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>Data from ADC to AXI-Stream. With configuration by AXI</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>C_M00_AXIS_TDATA_WIDTH</spirit:name>
+      <spirit:displayName>C M00 AXIS TDATA WIDTH</spirit:displayName>
+      <spirit:description>Width of S_AXIS address bus. The slave accepts the read and write addresses of width C_M_AXIS_TDATA_WIDTH.</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_AXIS_TDATA_WIDTH" spirit:choiceRef="choice_list_6fc15197" spirit:order="3">32</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_M00_AXIS_TDATA_WIDTH">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_DATA_WIDTH</spirit:name>
+      <spirit:displayName>C S00 AXI DATA WIDTH</spirit:displayName>
+      <spirit:description>Width of S_AXI data bus</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197" spirit:order="5">32</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_DATA_WIDTH">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_ADDR_WIDTH</spirit:name>
+      <spirit:displayName>C S00 AXI ADDR WIDTH</spirit:displayName>
+      <spirit:description>Width of S_AXI address bus</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_ADDR_WIDTH" spirit:order="6" spirit:rangeType="long">4</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_ADDR_WIDTH">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_BASEADDR</spirit:name>
+      <spirit:displayName>C S00 AXI BASEADDR</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_BASEADDR" spirit:order="7" spirit:bitStringLength="32">0xFFFFFFFF</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_BASEADDR">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_HIGHADDR</spirit:name>
+      <spirit:displayName>C S00 AXI HIGHADDR</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_HIGHADDR" spirit:order="8" spirit:bitStringLength="32">0x00000000</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_HIGHADDR">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">AdcToAxiStream_v1_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>DEPTH_OF_RECEIVER_DATA_FIFO</spirit:name>
+      <spirit:displayName>Depth Of Receiver Data Fifo</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DEPTH_OF_RECEIVER_DATA_FIFO">2048</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">zynq</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>AdcToAxiStream_v1.0</xilinx:displayName>
+      <xilinx:coreRevision>17</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2021-06-17T08:39:40Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2696f1b8_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e2638b_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19405183_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ee5ee92_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b2caa45_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22a6884_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@162e28c6_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d762bf9_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@551c0d3d_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cb8fe_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e120dfc_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2632eca1_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e6d0db0_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@744fff7_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e05fcd0_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a32f70_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5cfc32c4_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7767fb59_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3683b87a_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@248c21c0_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d3d2f37_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7874c24d_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b295f5c_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31dd4bf_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1693b204_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@633491a8_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e84f88_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e146e9c_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e2e2ca_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e75562a_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72b4696e_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4938a06_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@571bc17b_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a8a16c4_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56a61c54_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d43f026_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@438811a3_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11e96411_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3cb82893_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2654aed6_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3dd6ed2f_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6492d647_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61c91f30_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e579e81_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65c466e1_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36bd15f2_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@570eaf19_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c3dead7_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79567464_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4358cfc1_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46606dd0_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5918334b_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c105d80_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@235cf063_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2605f810_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@136e1c1b_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6742645f_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7741bb58_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e0bff4e_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7bce29d8_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26f3b29c_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@799c64bf_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f3b277c_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69d3ef92_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d08767d_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55f7a7a0_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ec331e5_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12448790_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13969153_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24508e78_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42748b71_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32811a7e_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c0deef4_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c0eecf4_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c6fa13d_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64d2f558_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@793cc782_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1394b3b6_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50c88ac3_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2eda1e_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3cd4ad6c_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fedc8e9_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3dbfa7ca_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27c0600_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@305144de_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e0e5274_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18c9758b_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32c7c384_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@147bc2ed_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c1804ee_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68e63849_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39e14aec_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2838fde9_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21d4bea4_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a67941b_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@323e959e_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@509caa95_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a88f87_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74ac8b8e_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d1aa9e1_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@bd7ef69_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@266c4bf0_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bf18cd7_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@142ca3fd_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79e05d9c_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@762f57d3_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7cb1892a_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d75d808_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10547209_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1151b05f_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3084bfd9_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a456b02_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a7cbb92_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e7e5967_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@244c69f_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b41f3ff_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62c67e54_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4279e938_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63eddb9b_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21f57725_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41172c1_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f0bbeb2_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@402bf6ff_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2dd7be47_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fd618f0_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f6ce7f2_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b757e71_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cfbd495_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@505f148a_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d65a2a9_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51943e4f_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32a66e82_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@276f0efe_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e6a1103_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@632a9cf0_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65775085_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f6e73ff_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d8aa856_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60a5ab9a_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66da6c40_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@610c8cc_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fafcfb9_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f4ce22b_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@667f985f_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b0189e0_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13c42223_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19ef6dd7_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b6cd23a_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@247af997_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@545cef11_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1df347a4_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33a344ff_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35d4b256_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c173ede_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fb62f95_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7dc57f1d_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@387bfdb_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b2410b1_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e567b61_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48ee8034_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b89ab36_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71a1a05f_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54a63487_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@413de185_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14bc298b_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28cb0764_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36213dc2_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78070203_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50050880_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75456ff3_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3be4d7b5_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c6f0cab_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a12e148_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b4de76b_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ee06c6d_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13c0428c_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@121dab89_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f7f42b0_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d191eed_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@140a0925_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5de85ae9_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63b99771_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25aca2d4_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7921a54a_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@bab21a2_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27f1fbbd_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a668620_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e665b4c_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@835016d_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63df937e_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2499c35f_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e217a3e_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b472d3e_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b068c07_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c3cc311_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6464b02_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@369564e1_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17f17155_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73bb13ad_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22bcd8e5_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4dae23e5_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f04523c_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40b8197b_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28457292_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72584c56_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c0c4a27_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f6387d5_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7adc743_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@728b9d_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6555cd77_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6993620b_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@633c846b_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7790d5af_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fcb1725_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7615b27e_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b90f5a4_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@734ce134_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19082c9d_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d547446_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@607f774c_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7af6b963_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e9f111e_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a6efdc5_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b0167c5_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62792865_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11e459f5_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6be5ca74_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9c55df2_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44dadd36_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5466eba5_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1663f9d4_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53ba6ad5_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2139a573_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7797abad_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cc8009c_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15c4a234_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18ea17cb_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ecbfeda_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cea900c_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@171443a4_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73f662b7_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c23f079_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@98b60db_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e946ad9_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@299130b6_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62fecf1e_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e25c8f3_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15e779b9_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1772a251_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f7d53a0_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@295d355c_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b4ee14c_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d8e38f4_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62fe201b_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4aa5f68f_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69bcb7fd_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@755437da_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15b39e8b_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12172f88_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a750da_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f506b01_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a890609_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13b0705d_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1172714d_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d6283d8_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@193adf16_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21a5b84b_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12a548b_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7121012b_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32b6e015_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34517ceb_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e4a1bbb_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33da5781_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@795855e3_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69e50c5f_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40681619_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d3020eb_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@721c2856_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@161c2625_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40dcc55c_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@188f29ae_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6eb5e75c_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ee3c555_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@290bdf66_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48dd4b98_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c4ee2c9_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5aac5d2_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f169a9d_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61aebd24_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fdab199_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d38b6b5_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7412741_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15c804da_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21e07630_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ca91e55_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31d8d4a0_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1933abdd_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c73e856_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a26537d_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67f55514_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f9d79ff_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46bdfeda_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@719fdbbc_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36e80952_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45c273d4_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1313735c_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@609644c3_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b65c7b3_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64d6ff1e_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@597bcaae_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@195eb3c8_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50a20aa2_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@232f37d_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@169a8c20_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c73e925_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c2cea90_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33e6f716_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9ba7582_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e194e8c_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bbde7b9_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17381fbd_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bee590f_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c98f288_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38776926_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71a6ab8a_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fb0893f_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c1d6a17_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d3c4684_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b56a96_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bfb1a7a_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5428703_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1647fb6b_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3de7e142_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4564e192_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@675e0331_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7fa18bd1_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@642343b8_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f5dc9f0_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2744870a_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e5bc5ac_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@86e5528_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2841f969_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54286500_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28a6de2_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e857624_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@657eab18_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c4caa4e_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57fa6d9d_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ab89ae2_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c7e6345_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29bfe59b_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46b009_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c239bcc_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ce27367_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44f2d8e1_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7369df2d_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29ee3e4d_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54265a3a_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d012d47_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fcb80a_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32c88f0d_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7776d3d0_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c67ea4e_ARCHIVE_LOCATION">c:/Users/work/Xilinx/Vivado_2019_Projects/ZynqFifoStream/ip_repo/AdcToAxiStream_1.0</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="de9ca915"/>
+      <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed1368d5"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="6be33849"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="a7939e55"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="119e2a53"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="43063efa"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>
